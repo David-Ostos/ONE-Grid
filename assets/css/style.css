@@ -7,23 +7,20 @@
     "contenido"
     "rodapie";  
     grid-template-columns: auto; /*aqui se define el tamaño de las columnas*/
-    grid-template-rows:  50px 100vh auto; /* se define el area de las filas, y se separa con "espacios" las medidas de cada area especificada anteriormente*/
+    grid-template-rows:  50px 100vh auto; /* se define el area de las filas,y se separa con "espacios" las medidas de cada area especificada anteriormente*/
 }
 
 .encabezado {
 
-    background: #00cc99;
     grid-area: encabezado; /*se determian el nombre del bloque*/
     
 }
 .contenido {
 
-    background: #ff8080;
     grid-area: contenido;
 }
 
 .rodapie { 
 
-    background: #0099ff;
     grid-area: rodapie;
 }
