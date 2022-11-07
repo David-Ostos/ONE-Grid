@@ -1,0 +1,52 @@
+.populares{ /*aqui estan todos los contenedores de populares*/
+
+    padding: 3rem 0;
+}
+
+.populares__contenido{ /*este es el contenedor de contenidos*/
+
+    display: flex; /*se comienz poniendo un grip para poder definir el display*/
+    flex-wrap: wrap;/*se le coloca un wrap para poder hacer el corte en su medida*/
+    grid-area: contenido;/*aqui se le determina que esta area es "contenido"*/
+    padding: 1rem 0; /*un mpequeño margen de laterales*/
+}
+
+.populares__card{ /* aqui se comienza a trabajar los item de card para poder tenes su tamaño y forma preedestinado*/
+
+    background: #fdfdfd;
+    display: grid;/*se define el grip*/
+    grid-template-areas: /*se define las diferentes template areas "card-imagen y card-base"*/
+    "card-imagen"
+    "card-base";
+    grid-template-columns: 100%; /*el tamaño de las columnas*/
+    grid-template-rows: 173px auto;/*tamaño de las filas*/
+    margin-right: 1rem;/*el margend e separacion de cada uno*/
+    width: calc(20% - 1rem);/* calcular el area de la carta*/
+}
+
+.populares__card___imagen{ /*aqui se modifican las imagenes de la "card" */
+
+    grid-area: card-imagen; /*dfiniendo el nombre del area */
+    width: 100%;
+    height: 100%;
+}
+
+.populares__card___base{/* esta es la base de datos de la carta que se divide en 2 partes, titulo y contenido*/
+
+    display: grid;
+    grid-area: card-base;
+    grid-row-gap: .5rem; /*separacion entre filas*/
+    grid-template-areas:/*se definen las areas de los hijos*/
+    "card-header"
+    "card-descripcion";
+    grid-template-rows: 50px auto; /*se define el tamaño de las filas*/
+    padding: .75rem; /*margen interno*/
+}
+
+.populares__card___descripcion{/*la seccion de decripcion que esta dentro de card__base*/
+
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: card-descripcion;
+    padding: 1rem 0;
+}
