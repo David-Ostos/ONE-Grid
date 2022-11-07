@@ -7,20 +7,42 @@
     "contenido"
     "rodapie";  
     grid-template-columns: auto; /*aqui se define el tamaño de las columnas*/
-    grid-template-rows:  50px 100vh auto; /* se define el area de las filas,y se separa con "espacios" las medidas de cada area especificada anteriormente*/
+    grid-template-rows:  50px auto auto; /* se define el area de las filas,y se separa con "espacios" las medidas de cada area especificada anteriormente*/
 }
 
 .encabezado {
 
     grid-area: encabezado; /*se determian el nombre del bloque*/
+    align-items: center; 
+    display: flex;
+    padding: 0 2rem;
     
 }
+
+.menu__link{
+
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover {
+
+    border-bottom: 2px solid #0073e6;
+}
+
 .contenido {
 
     grid-area: contenido;
+    padding: 2rem 0 0 0;
 }
 
 .rodapie { 
-
+    
+    color: #333333af ;
+    background: #fdfdfd;
     grid-area: rodapie;
+    text-align: center;
+    padding:2rem;
+    font-size: .8em;
+    font-weight: bold;
 }
