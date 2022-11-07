@@ -1,6 +1,6 @@
 .populares{ /*aqui estan todos los contenedores de populares*/
 
-    padding: 3rem 0;
+    padding: 3rem 2rem;
 }
 
 .populares__contenido{ /*este es el contenedor de contenidos*/
@@ -42,6 +42,18 @@
     grid-template-rows: 50px auto; /*se define el tamaño de las filas*/
     padding: .75rem; /*margen interno*/
 }
+/*.populares__card___titulo{
+
+    color: #333333;
+    font-size: 1.5rem;
+    display:flex;
+}
+ .populares__card___data{
+
+    display:flex;
+    color: #808080;
+    font-size: .9rem;
+ }*/
 
 .populares__card___descripcion{/*la seccion de decripcion que esta dentro de card__base*/
 
@@ -49,4 +61,37 @@
     flex-wrap: wrap;
     grid-area: card-descripcion;
     padding: 1rem 0;
+    /*color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;*/
 }
+/*
+.populares__titulo{
+
+    font-weight: 500;
+}
+
+.populares__icon{
+
+    margin-right: .25rem;
+}
+
+.populares__boton{
+
+    background: transparent;
+    border: none;
+    color: #333333;
+}
+.populares__card:last-child{
+
+    margin-right: 0;
+}
+
+.populares__header{
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+    padding-bottom: .3rem;
+}*/
