@@ -1,0 +1,79 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .destaques__secundario:nth-child(2),.destaques__secundario:nth-child(3),
+  .destaques__secundario:nth-child(4),.destaques__secundario:nth-child(5) { /*Se separan con una "," los que tienen el mismo codigo*/
+
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+
+  .destaques__principal,
+  .destaques__categorias {
+
+    grid-column: 1 / 5;
+  }
+
+  .encabezado {
+
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .populares__contenido{
+    flex-direction: column;
+  }
+
+  .populares__card{
+    width: 100%;
+    padding: 2rem 0 ; 
+    margin: .5rem 0;
+  }
+
+  .populares__card___titulo, .populares__card___data{
+    justify-content: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .populares__card{
+        width: calc(50% - 2rem);
+        padding: 2rem 1rem ; 
+        margin: .5rem .5rem;
+    }
+
+    .populares__contenido{
+        justify-content: space-around;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+ .populares__card{
+    width: calc(33.33% - 1rem);
+    padding: 0 ; 
+    margin: 0 1rem 0 0;}
+
+    .populares__contenido{
+        justify-content: initial;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.populares__card{
+    width: calc(20% - 1rem);
+    padding: 0 ; 
+    margin: 0 1rem 0 0;}
+
+    .populares__contenido{
+        justify-content: initial;
+    }
+}
