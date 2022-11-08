@@ -1,92 +1,94 @@
-.destaques{ /* aqui se creo un nuevo archivo css "destaques" para manejar por separado esta area*/
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;/* aqui se definio el tamaño de las columnas en partes iguales */
-    grid-template-rows: 33.33% 33.33% 33.33%; /* aqui las filas */
-    height: calc(100vh - 50px); /*aquie el tamaño de la altura agarrando el 100% de la pantalla menos los 50px de header*/
-    gap: .2rem; /* para generar una separacion entre las imagenes*/
-    padding: 0 .2rem; /* para hacer una separacion de los margenes*/
-    width: calc(100% - .4rem); /*para adaptar el tamaño de la imagen con la separacion colocada*/
+.destaques {
+  /* aqui se creo un nuevo archivo css "destaques" para manejar por separado esta area*/
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%; /* aqui se definio el tamaño de las columnas en partes iguales */
+  grid-template-rows: 33.33% 33.33% 33.33%; /* aqui las filas */
+  height: calc(
+    100vh - 50px
+  ); /*aquie el tamaño de la altura agarrando el 100% de la pantalla menos los 50px de header*/
+  gap: 0.2rem; /* para generar una separacion entre las imagenes*/
+  padding: 0 0.2rem; /* para hacer una separacion de los margenes*/
+  width: calc(
+    100% - 0.4rem
+  ); /*para adaptar el tamaño de la imagen con la separacion colocada*/
 }
 
-.destaques__principal{ /*sistema debian 2 undersline*/
-    
-    background: url(../img/fortnite.jpg) center / cover no-repeat; /*para poder poenr el tamaño, la direccion y la repeticion simplificado se coloca de esta amnera
+.destaques__principal {
+  /*sistema debian 2 undersline*/
+
+  background: url(../img/fortnite.jpg) center / cover no-repeat; /*para poder poenr el tamaño, la direccion y la repeticion simplificado se coloca de esta amnera
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;*/
-    grid-column:1 / 4;/* para darle los espacios en un solo codigo de las columnas se simplifica de esta manera el inicio y el final*/
-    grid-row: 1 / 3; /* para darle los espacios en un solo codigo de las filas se simplifica de esta manera el inicio y el final*/
+  grid-column: 1 / 4; /* para darle los espacios en un solo codigo de las columnas se simplifica de esta manera el inicio y el final*/
+  grid-row: 1 / 3; /* para darle los espacios en un solo codigo de las filas se simplifica de esta manera el inicio y el final*/
 }
 
-.destaques__secundario:nth-child(2){ /* como hay diferentes hijos de la misma clase y tienen diferente caracteristicas se representa cada una por su posicion con ":nth-child(#)"*/
+.destaques__secundario:nth-child(2) {
+  /* como hay diferentes hijos de la misma clase y tienen diferente caracteristicas se representa cada una por su posicion con ":nth-child(#)"*/
 
-    background: url(../img/pubg.jpg)center / cover no-repeat;
-    grid-column:4 / 5;
-    grid-row: 1 / 2;
+  background: url(../img/pubg.jpg) center / cover no-repeat;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
 }
 
-.destaques__secundario:nth-child(3){
-
-    background: url(../img/slack.png)center / cover no-repeat;
-    grid-column:4 / 5;
-    grid-row: 2 / 3;
+.destaques__secundario:nth-child(3) {
+  background: url(../img/slack.png) center / cover no-repeat;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
 }
 
-.destaques__secundario:nth-child(4){
-
-    background: url(../img/whatsapp.png)center / cover no-repeat;
-    grid-column:4 / 5;
-    grid-row: 3 / 4;
+.destaques__secundario:nth-child(4) {
+  background: url(../img/whatsapp.png) center / cover no-repeat;
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
 }
 
-.destaques__secundario:nth-child(5){
-
-    background: url(../img/cs-go.jpg)center / cover no-repeat;
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-
+.destaques__secundario:nth-child(5) {
+  background: url(../img/cs-go.jpg) center / cover no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
 }
 
-.box{ /*para centrar el texto en la parte inferior*/
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.box {
+  /*para centrar el texto en la parte inferior*/
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.destaques__titulo{ /* para modificar el aspecto al texto*/
+.destaques__titulo {
+  /* para modificar el aspecto al texto*/
 
-    background: rgba(0,0,0,0.5);
-    color: #fdfdfd;
-    width: 100%;
-    text-align: center;
-    padding: .6rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fdfdfd;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem;
 }
 
-.destaques__categorias{
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+.destaques__categorias {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
 }
 
-.destaques__categorias___lista{
-
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-between;
+.destaques__categorias___lista {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
 }
 
-.destaques__categorias___item{
-
-    align-items: center;
-    background: #fdfdfd;
-    display: flex;
-    color: #333333;
-    width: 50%;
-    padding: 1rem;
+.destaques__categorias___item {
+  align-items: center;
+  background: #fdfdfd;
+  display: flex;
+  color: #333333;
+  width: 50%;
+  padding: 1rem;
 }
 
-.destaques__categorias___link{
-
-    color: inherit;
+.destaques__categorias___link {
+  color: inherit;
 }
